@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{title or "CJ"}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+
+<body>
+  <header class="header">
+    <pre class="logo">
+	{{ logo | safe }}
+    </pre>
+
+    <nav class="nav">
+      <button data-section="about">about</button>
+      <button data-section="projects">projects</button>
+      <button data-section="skills">skills</button>
+      <button data-section="contact">contact</button>
+      <button data-section="resume">resume</button>
+    </nav>
+  </header>
+
+  <main class="content">
+    {{ content | safe }}
+  </main>
+
+  <footer class="footer">
+    <p>© CARL</p>
+  </footer>
+
+  <script src="/assets/js/nav.js"></script>
+</body>
+</html>
+

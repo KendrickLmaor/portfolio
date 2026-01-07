@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Joshua</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+
+<body>
+  <header class="header">
+    <pre class="logo">
+	
+ _____  _____   ____    __  __  __  __  ______     
+/\___ \/\  __`\/\  _`\ /\ \/\ \/\ \/\ \/\  _  \    
+\/__/\ \ \ \/\ \ \,\L\_\ \ \_\ \ \ \ \ \ \ \L\ \   
+   _\ \ \ \ \ \ \/_\__ \\ \  _  \ \ \ \ \ \  __ \  
+  /\ \_\ \ \ \_\ \/\ \L\ \ \ \ \ \ \ \_\ \ \ \/\ \ 
+  \ \____/\ \_____\ `\____\ \_\ \_\ \_____\ \_\ \_\
+   \/___/  \/_____/\/_____/\/_/\/_/\/_____/\/_/\/_/
+
+    </pre>
+
+    <nav class="nav">
+      <button data-section="about">about</button>
+      <button data-section="projects">projects</button>
+      <button data-section="skills">skills</button>
+      <button data-section="contact">contact</button>
+      <button data-section="resume">resume</button>
+    </nav>
+  </header>
+
+  <main class="content">
+    
+<section id="section-about" class="section">
+  <h2>About</h2>
+  <p>I'm Joshua. I love tinkering with computers and building software that is fun.</p>
+</section>
+
+<section id="section-projects" class="section">
+  <h2>Projects</h2>
+
+  
+  <div class="project">
+  <pre class="project-box">
+	+-------------------------+
+	| GameBoy Color Emulator	  
+	+-------------------------+
+	Tech: C++, SDL3
+    </pre>
+    
+    <p class="project-desc">
+    	This is a Game Boy Color emulator written in modern C++, built with a clean separation of CPU, memory, and graphics systems. It currently implements the LR35902 CPU core, memory‑mapped I/O, and background tile rendering using real GBC tile data. The video demo shows the emulator correctly decoding and displaying background tiles as colored squares, which confirms that VRAM access, tile indexing, and palette handling are working. The next steps involve implementing the full PPU scanline pipeline, sprite rendering, and full background composition.
+   </p>
+
+    
+    <video controls class="project-video">
+      <source src="/assets/video/gb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+  </div>
+  
+  <div class="project">
+  <pre class="project-box">
+	+-------------------------+
+	| Minecraft server bot	  
+	+-------------------------+
+	Tech: Python, Google Cloud Platform
+    </pre>
+    
+    <p class="project-desc">
+    	This project is a Discord bot built in Python that uses simple HTTP handling and the Google Cloud SDK to spin up a dedicated Minecraft server VM on demand. When users in the Discord server request it, the bot authenticates with GCP, launches the VM instance, and returns the server’s IP so everyone can join and play together. It’s designed to keep costs low by only running the VM when needed, and it automates the entire lifecycle—from startup to shutdown—so players can jump into a shared world without any manual server management.
+   </p>
+
+    
+    <video controls class="project-video">
+      <source src="/assets/video/mc.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+  </div>
+  
+  <div class="project">
+  <pre class="project-box">
+	+-------------------------+
+	| Pong	  
+	+-------------------------+
+	Tech: C++, Raylib
+    </pre>
+    
+    <p class="project-desc">
+    	This is a classic Pong remake built in C++ using the Raylib library, focusing on clean architecture and smooth, responsive gameplay. It implements simple physics for paddle movement and ball collisions, a lightweight game loop, and a minimal UI that keeps the experience true to the original arcade feel. The project was a great way to explore Raylib’s rendering and input systems while building a small, self‑contained game that demonstrates core game‑dev fundamentals like timing, collision detection, and state management.
+   </p>
+
+    
+    <video controls class="project-video">
+      <source src="/assets/video/pong.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+  </div>
+  
+
+</section>
+
+<section id="section-skills" class="section">
+  <h2>Skills</h2>
+  <h3>Programming Langauges</h3>
+  <ul>
+	<li>C++ - CLI tools, emulator development, game development</li>
+	<li>Python - scripting, automation, tooling</li>
+	<li>C# - web development, tooling</li>
+	<li>Java - academic & project use</li>
+	<li>PHP - web backend</li>
+
+  </ul>
+  
+  <h3>Frameworks & tools</h3>
+  <ul>
+	<li>ASP.NET - web applications & APIs</li>
+	<li>CMake - C++ build configuration</li>
+	<li>Git - version control, branching, collaboration</li>
+
+
+  </ul>
+
+</section>
+
+<section id="section-contact" class="section">
+  <h2>Contact</h2>
+  <h3>Based in Singapore</h3>
+  <p>Email: ChiefKeefSosa@gmail.com</p>
+  <p>Phone: 90002222</p>
+</section>
+
+<section id="section-resume" class="section">
+	<h2>Resume</h2>
+
+	<p>You can view my resume below:</p>
+
+	<iframe
+		src="/assets/resume.pdf"
+		class="resume-frame">
+	</iframe>
+
+	<p><a href="/assets/resume.pdf" target="_blank">Download PDF</a></p>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© CARL</p>
+  </footer>
+
+  <script src="/assets/js/nav.js"></script>
+</body>
+</html>
+
