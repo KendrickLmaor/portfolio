@@ -12,20 +12,15 @@ title: "Joshua"
 
 <section id="section-projects" class="section">
   <h2>Projects</h2>
-
+  
   {% for project in projects %}
   <div class="project">
-  <pre class="project-box">
-	+-------------------------+
-	| {{project.name}}	  
-	+-------------------------+
-	Tech: {{project.tech | join(", ")}}
-    </pre>
+    <div class="project-info">
+      <p class="project-name">{{ project.name }}</p>
+      <p class="project-tech">{{ project.tech | join(", ") }}</p>
+      <p class="project-desc">{{ project.description }}</p>
+    </div>
     
-    <p class="project-desc">
-    	{{project.description}}
-   </p>
-
     {% if project.video %}
     <video controls class="project-video">
       <source src="{{ project.video }}" type="video/mp4">
@@ -34,8 +29,8 @@ title: "Joshua"
     {% endif %}
   </div>
   {% endfor %}
-
 </section>
+
 
 <section id="section-skills" class="section">
   <h2>Skills</h2>
@@ -63,19 +58,6 @@ title: "Joshua"
 <section id="section-contact" class="section">
   <h2>Contact</h2>
   <h3>Based in Singapore</h3>
-  <p>Email: ChiefKeefSosa@gmail.com</p>
-  <p>Phone: 90002222</p>
+  <a href="mailto:CarlwinJoshua@gmail.com">Email me</a>
 </section>
 
-<section id="section-resume" class="section">
-	<h2>Resume</h2>
-
-	<p>You can view my resume below:</p>
-
-	<iframe
-		src="assets/resume.pdf"
-		class="resume-frame">
-	</iframe>
-
-	<p><a href="assets/resume.pdf" target="_blank">Download PDF</a></p>
-</section>

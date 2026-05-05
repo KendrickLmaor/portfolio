@@ -26,7 +26,6 @@
       <button data-section="projects">projects</button>
       <button data-section="skills">skills</button>
       <button data-section="contact">contact</button>
-      <button data-section="resume">resume</button>
     </nav>
   </header>
 
@@ -39,20 +38,15 @@
 
 <section id="section-projects" class="section">
   <h2>Projects</h2>
-
+  
   
   <div class="project">
-  <pre class="project-box">
-	+-------------------------+
-	| GameBoy Color Emulator	  
-	+-------------------------+
-	Tech: C++, SDL3
-    </pre>
+    <div class="project-info">
+      <p class="project-name">GameBoy Color Emulator</p>
+      <p class="project-tech">C++, SDL3</p>
+      <p class="project-desc">This is a Game Boy Color emulator written in modern C++, built with a clean separation of CPU, memory, and graphics systems. It currently implements the LR35902 CPU core, memory‑mapped I/O, and background tile rendering using real GBC tile data. The video demo shows the emulator correctly decoding and displaying background tiles as colored squares, which confirms that VRAM access, tile indexing, and palette handling are working. The next steps involve implementing the full PPU scanline pipeline, sprite rendering, and full background composition.</p>
+    </div>
     
-    <p class="project-desc">
-    	This is a Game Boy Color emulator written in modern C++, built with a clean separation of CPU, memory, and graphics systems. It currently implements the LR35902 CPU core, memory‑mapped I/O, and background tile rendering using real GBC tile data. The video demo shows the emulator correctly decoding and displaying background tiles as colored squares, which confirms that VRAM access, tile indexing, and palette handling are working. The next steps involve implementing the full PPU scanline pipeline, sprite rendering, and full background composition.
-   </p>
-
     
     <video controls class="project-video">
       <source src="assets/video/gb.mp4" type="video/mp4">
@@ -62,17 +56,12 @@
   </div>
   
   <div class="project">
-  <pre class="project-box">
-	+-------------------------+
-	| Minecraft server bot	  
-	+-------------------------+
-	Tech: Python, Google Cloud Platform
-    </pre>
+    <div class="project-info">
+      <p class="project-name">Minecraft server bot</p>
+      <p class="project-tech">Python, Google Cloud Platform</p>
+      <p class="project-desc">This project is a Discord bot built in Python that uses simple HTTP handling and the Google Cloud SDK to spin up a dedicated Minecraft server VM on demand. When users in the Discord server request it, the bot authenticates with GCP, launches the VM instance, and returns the server’s IP so everyone can join and play together. It’s designed to keep costs low by only running the VM when needed, and it automates the entire lifecycle—from startup to shutdown—so players can jump into a shared world without any manual server management.</p>
+    </div>
     
-    <p class="project-desc">
-    	This project is a Discord bot built in Python that uses simple HTTP handling and the Google Cloud SDK to spin up a dedicated Minecraft server VM on demand. When users in the Discord server request it, the bot authenticates with GCP, launches the VM instance, and returns the server’s IP so everyone can join and play together. It’s designed to keep costs low by only running the VM when needed, and it automates the entire lifecycle—from startup to shutdown—so players can jump into a shared world without any manual server management.
-   </p>
-
     
     <video controls class="project-video">
       <source src="assets/video/mc.mp4" type="video/mp4">
@@ -82,17 +71,12 @@
   </div>
   
   <div class="project">
-  <pre class="project-box">
-	+-------------------------+
-	| Pong	  
-	+-------------------------+
-	Tech: C++, Raylib
-    </pre>
+    <div class="project-info">
+      <p class="project-name">Pong</p>
+      <p class="project-tech">C++, Raylib</p>
+      <p class="project-desc">This is a classic Pong remake built in C++ using the Raylib library, focusing on clean architecture and smooth, responsive gameplay. It implements simple physics for paddle movement and ball collisions, a lightweight game loop, and a minimal UI that keeps the experience true to the original arcade feel. The project was a great way to explore Raylib’s rendering and input systems while building a small, self‑contained game that demonstrates core game‑dev fundamentals like timing, collision detection, and state management.</p>
+    </div>
     
-    <p class="project-desc">
-    	This is a classic Pong remake built in C++ using the Raylib library, focusing on clean architecture and smooth, responsive gameplay. It implements simple physics for paddle movement and ball collisions, a lightweight game loop, and a minimal UI that keeps the experience true to the original arcade feel. The project was a great way to explore Raylib’s rendering and input systems while building a small, self‑contained game that demonstrates core game‑dev fundamentals like timing, collision detection, and state management.
-   </p>
-
     
     <video controls class="project-video">
       <source src="assets/video/pong.mp4" type="video/mp4">
@@ -101,8 +85,8 @@
     
   </div>
   
-
 </section>
+
 
 <section id="section-skills" class="section">
   <h2>Skills</h2>
@@ -130,22 +114,9 @@
 <section id="section-contact" class="section">
   <h2>Contact</h2>
   <h3>Based in Singapore</h3>
-  <p>Email: ChiefKeefSosa@gmail.com</p>
-  <p>Phone: 90002222</p>
+  <a href="mailto:CarlwinJoshua@gmail.com">Email me</a>
 </section>
 
-<section id="section-resume" class="section">
-	<h2>Resume</h2>
-
-	<p>You can view my resume below:</p>
-
-	<iframe
-		src="assets/resume.pdf"
-		class="resume-frame">
-	</iframe>
-
-	<p><a href="assets/resume.pdf" target="_blank">Download PDF</a></p>
-</section>
 
   </main>
 
