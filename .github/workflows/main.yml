@@ -23,8 +23,8 @@ jobs:
 
       - name: Install and build
         run: |
-          npm install
-          npm run build
+          npm ci
+          npx --yes @11ty/eleventy
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
